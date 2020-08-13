@@ -26,10 +26,41 @@ void draw() {
     ellipse(eyeposX, eyeposY + 1, 12, 12);
    ellipse(eyeposX + 55, eyeposY + 1, 12, 12);
   }
-  else {
+  else if (mouseY >= 291 && mouseX <= 382) {
+ ellipse(xBoundry + 55, ByBoundry + 1, 12, 12);
+  ellipse(BxBoundry - 35, ByBoundry + 1, 12, 12);
+  }
+  else if (mouseY <= 222 && mouseX >= 382) {
+ ellipse(BxBoundry + 55, yBoundry + 1, 12, 12);
+  ellipse(BxBoundry - 0, yBoundry + 1, 12, 12);
+  }
+    else if (mouseY <= 222 && mouseX <= 349) {
+ ellipse(xBoundry + 55, yBoundry + 1, 12, 12);
+  ellipse(BxBoundry - 35, yBoundry + 1, 12, 12);
+  }
+    else if (mouseY >= 291 && mouseX >= 382) {
+ ellipse(xBoundry + 90, ByBoundry + 1, 12, 12);
+  ellipse(BxBoundry - 0, ByBoundry + 1, 12, 12);
+  }
+  
+  else if (mouseX <= 349) {
  ellipse(xBoundry + 55, eyeposY + 1, 12, 12);
   ellipse(BxBoundry - 35, eyeposY + 1, 12, 12);
   }
+  else if (mouseX >= 382) {
+ ellipse(xBoundry + 90, eyeposY + 1, 12, 12);
+  ellipse(BxBoundry - 0, eyeposY + 1, 12, 12);
+  }
+  else if (mouseY <= 222) {
+ ellipse(eyeposX, yBoundry + 1, 12, 12);
+  ellipse(eyeposX + 55, yBoundry + 1, 12, 12);
+  }
+  else if (mouseY >= 291) {
+ ellipse(eyeposX, ByBoundry + 1, 12, 12);
+  ellipse(eyeposX + 55, ByBoundry + 1, 12, 12);
+  }
+  
+
    eyeposX = mouseX;
    eyeposY = mouseY;
 }
