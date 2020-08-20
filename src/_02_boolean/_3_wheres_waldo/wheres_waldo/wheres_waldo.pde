@@ -23,10 +23,19 @@ void setup() {
 void draw() {
       // Use this print statement to find out the coordinates of Waldo when you press the mouse
        println("X: " + mouseX + " Y: " + mouseY); 
-//564 48
+//552 58 - 572 32
       // If the mouse is on Waldo, print “Waldo found!”
-
+if (mousePressed == true && mouseX > 552 && mouseX < 572 && mouseY < 60 && mouseY > 32) {
+  //playWoohoo();
+  System.out.println("yes");
 }
+else if(mousePressed == true) {
+  //playDoh();
+  System.out.println("no");
+}
+  
+}
+
 /**********  Now to add the sounds. You will need to uncomment all the code and import the Minim library ********/
 
       // If Waldo is found, also use a method below to play “Woohoo”
